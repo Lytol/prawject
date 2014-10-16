@@ -2,28 +2,26 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>A Brand New nanoc Site - <%= @item[:title] %></title>
+    <title><%= @item[:title] %></title>
     <link rel="stylesheet" href="<%= @items['/stylesheet/'].path %>">
-
-    <!-- you don't need to keep this, but it's cool for stats! -->
-    <meta name="generator" content="nanoc <%= Nanoc::VERSION %>">
   </head>
   <body>
-    <div id="main">
+    <div id="wrapper">
+      <h1 class="header">
+        <a href='/'>Project Name</a>
+      </h1>
+
+      <nav class="navigation">
+        <ul>
+          <li><a href="/docs">docs</a></li>
+          <li><a href="https://www.github.com/lytol/prawject">source</a></li>
+          <li><a href="/community">community</a></li>
+        </ul>
+      </nav>
+
       <%= yield %>
-    </div>
-    <div id="sidebar">
-      <h2>Documentation</h2>
-      <ul>
-        <li><a href="http://nanoc.ws/docs/">Documentation</a></li>
-        <li><a href="http://nanoc.ws/docs/tutorial/">Getting Started</a></li>
-      </ul>
-      <h2>Community</h2>
-      <ul>
-        <li><a href="http://groups.google.com/group/nanoc/">Discussion Group</a></li>
-        <li><a href="irc://chat.freenode.net/#nanoc">IRC Channel</a></li>
-        <li><a href="http://github.com/nanoc/nanoc/wiki/">Wiki</a></li>
-      </ul>
+
+      <p class="footer">© 2014 by <a href="http://lytol.com">Brian Smith</a>. MIT Licensed.</p>
     </div>
   </body>
 </html>
