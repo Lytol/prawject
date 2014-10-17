@@ -1,2 +1,7 @@
+# Bundler and binstubs
+.bundle
+/bin
+
+# Nanoc build artifacts
 /site
 /tmp

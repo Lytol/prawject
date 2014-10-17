@@ -1,12 +1,12 @@
-task :default => [:test, :build]
+task :default => :test
 
 desc "Test the nanoc site"
-task :test do
+task :test => :build do
   system "nanoc check --all"
 end
 
 desc "Build the nanoc site"
-task :build do
+task :build => :clean do
   system "nanoc compile"
 end
 
@@ -16,6 +16,6 @@ task :clean do
 end
 
 desc "View the nanoc site (localhost:3000)"
-task :view => :build do
+task :view do
   system "nanoc view"
 end

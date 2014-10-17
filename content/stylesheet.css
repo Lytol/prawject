@@ -1,0 +1,45 @@
+body {
+  font-family: Monaco, "Lucida Console", monospace;
+  color: #333;
+}
+
+a {
+  color: #39C;
+}
+
+  a:active, a:hover {
+    color: #339;
+  }
+
+h3 {
+  background-color: #39C;
+  color: #FFF;
+  padding: 3px 10px;
+}
+
+.wrapper {
+  width: 760px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+}
+
+.subheader {
+  text-align: center;
+}
+
+.navigation {
+  text-align: center;
+}
+
+  .navigation li {
+    display: inline-block;
+    padding: 5px 20px;
+  }
+
+.footer {
+  text-align: center;
+  margin-top: 50px;
+}

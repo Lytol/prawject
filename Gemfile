@@ -9,3 +9,7 @@ gem 'adsf'
 # For `nanoc check`
 gem 'nokogiri'
 gem 'w3c_validators'
+
+# For Guard
+gem 'guard'
+gem 'guard-nanoc'
